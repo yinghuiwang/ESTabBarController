@@ -31,7 +31,7 @@ internal class ESTabBarItemContainer: UIControl {
         super.init(frame: CGRect.zero)
         self.tag = tag
         self.addTarget(target, action: #selector(ESTabBar.selectAction(_:)), for: .touchUpInside)
-        self.addTarget(target, action: #selector(ESTabBar.highlightAction(_:)), for: .touchDown)
+//        self.addTarget(target, action: #selector(ESTabBar.highlightAction(_:)), for: .touchDown)
         self.addTarget(target, action: #selector(ESTabBar.highlightAction(_:)), for: .touchDragEnter)
         self.addTarget(target, action: #selector(ESTabBar.dehighlightAction(_:)), for: .touchDragExit)
         self.backgroundColor = .clear
